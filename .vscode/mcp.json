@@ -1,0 +1,48 @@
+{
+  "project": {
+    "name": "Context-Driven AI Financial Planning Platform",
+    "description": "A modular AI-powered financial planner that converts life goals into logic-first, story-driven financial plans. Uses LLMs, behavior models, and visual pyramid-based reasoning to guide users toward real-world financial action."
+  },
+  "instructions": [
+    {
+      "role": "system",
+      "content": "Use the latest stable versions of libraries. Avoid deprecated setups and old CLIs (e.g., no CRA). Follow the modular folder structure and use TypeScript with tests and mock data."
+    },
+    {
+      "role": "user",
+      "content": "We are currently in the logic and planning phase. Only help with building core reasoning modules—do not scaffold UI, integrations, or paid services unless explicitly asked."
+    },
+    {
+      "role": "user",
+      "content": "Focus on modules like PyramidEngine, UserProfile, BehaviorEngine, and InsightGenerator under /apps/planner-core. Keep them pure, testable, and explainable."
+    },
+    {
+      "role": "user",
+      "content": "This is a bootstrapped MVP. Minimize costs. Do not suggest or use OpenAI MCP servers until greenlit."
+    }
+  ],
+  "servers": {
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "github_token",
+      "type": "promptString",
+      "description": "GitHub Personal Access Token",
+      "password": true
+    }
+  ]
+}
