@@ -46,3 +46,10 @@
     }
   ]
 }
+
+{
+  "files": [
+    "docs/system/logic-spec.md"
+  ],
+  "instructions": "This is the core logic and user flow for the AI financial planning app."
+}

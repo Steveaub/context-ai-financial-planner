@@ -18,6 +18,21 @@ TypeScript
 * Vite (build tooling)
 * Node.js + Express (for backend endpoints)
 
+## Cross-Platform Awareness
+The app will be desktop-first (React + Tailwind), but we plan to extend it to Android and iOS using React Native Web + Expo for shared code reuse.
+
+Copilot should:
+
+Favor portable logic and component structure (no browser-only or layout-locked solutions)
+
+Encapsulate UI-free logic into shared modules that can be reused in mobile
+
+When asked to scaffold future components, prefer platform-agnostic hooks, logic-only modules, and minimal dependencies
+
+Use screen-size-aware practices (e.g., layout hints in comments) if styling is mentioned
+
+Avoid assumptions about viewport, keyboard, or pointer interactions unless explicitly requested
+
 ## Coding Style
 
 * Modular and logic-first: one component/function/module per concern.
