@@ -1,1 +1,85 @@
-// Placeholder for test input profiles
+[
+  {
+    "id": 1,
+    "name": "Alex",
+    "age": 32,
+    "householdSize": 1,
+    "monthlyIncome": 4000,
+    "monthlyExpenses": 3500,
+    "savings": 2000,
+    "accounts": [
+      { "type": "checking", "balance": 1500 },
+      { "type": "savings", "balance": 500 },
+      { "type": "credit", "balance": 2000 },
+      { "type": "investment", "balance": 0 }
+    ],
+    "financialGoals": ["Stabilize income", "Build emergency fund"]
+  },
+  {
+    "id": 2,
+    "name": "Jamie and Taylor",
+    "age": 29,
+    "householdSize": 2,
+    "monthlyIncome": 8000,
+    "monthlyExpenses": 6000,
+    "savings": 15000,
+    "accounts": [
+      { "type": "checking", "balance": 5000 },
+      { "type": "savings", "balance": 10000 },
+      { "type": "credit", "balance": 0 },
+      { "type": "investment", "balance": 2000 }
+    ],
+    "financialGoals": ["Save for a home", "Increase investment portfolio"]
+  },
+  {
+    "id": 3,
+    "name": "Morgan",
+    "age": 45,
+    "householdSize": 1,
+    "monthlyIncome": 7000,
+    "monthlyExpenses": 3000,
+    "savings": 100000,
+    "accounts": [
+      { "type": "checking", "balance": 20000 },
+      { "type": "savings", "balance": 80000 },
+      { "type": "credit", "balance": 0 },
+      { "type": "investment", "balance": 50000 }
+    ],
+    "financialGoals": [
+      "Optimize cash holdings",
+      "Increase long-term investments"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Jordan",
+    "age": 24,
+    "householdSize": 1,
+    "monthlyIncome": 3000,
+    "monthlyExpenses": 3200,
+    "savings": 500,
+    "accounts": [
+      { "type": "checking", "balance": 300 },
+      { "type": "savings", "balance": 200 },
+      { "type": "credit", "balance": 5000 },
+      { "type": "investment", "balance": 0 }
+    ],
+    "financialGoals": ["Pay off debt", "Start investing"]
+  },
+  {
+    "id": 5,
+    "name": "Chris",
+    "age": 40,
+    "householdSize": 4,
+    "monthlyIncome": 10000,
+    "monthlyExpenses": 8000,
+    "savings": 20000,
+    "accounts": [
+      { "type": "checking", "balance": 5000 },
+      { "type": "savings", "balance": 15000 },
+      { "type": "credit", "balance": 1000 },
+      { "type": "investment", "balance": 30000 }
+    ],
+    "financialGoals": ["Save for college", "Plan for retirement"]
+  }
+]
