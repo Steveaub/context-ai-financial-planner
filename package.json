@@ -1,0 +1,13 @@
+{
+  "name": "context-ai-financial-planner",
+  "version": "1.0.0",
+  "description": "AI-powered personal financial planning platform",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/renderPlan.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
+}
